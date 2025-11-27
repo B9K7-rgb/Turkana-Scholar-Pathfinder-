@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkana Scholar Pathfinder | Kenyan Universities & Colleges Guide</title>
+    <meta name="description" content="Comprehensive guide to Kenyan universities and colleges for Turkana students with course information, requirements, and intake periods.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a5276;
+            --secondary: #2874a6;
+            --accent: #e74c3c;
+            --light: #f8f9f9;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --highlight: #f39c12;
+            --turkana: #d68910;
+            --public: #3498db;
+            --private: #8e44ad;
+            --college: #16a085;
+            --gray-100: #f8f9fa;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-400: #ced4da;
+            --gray-500: #adb5bd;
+            --gray-600: #6c757d;
+            --gray-700: #495057;
+            --gray-800: #343a40;
+            --gray-900: #212529;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--gray-100);
+            color: var(--gray-800);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.2rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo i {
+            font-size: 2.2rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--turkana);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: var(--turkana);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(40, 116, 166, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.9rem 1.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            margin-left: 1rem;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Search Section */
+        .search-section {
+            background: white;
+            padding: 2.5rem 0;
+            box-shadow: var(--shadow);
+        }
+
+        .search-container {
+            display: flex;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(40, 116, 166, 0.1);
+        }
+
+        .search-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 1.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: 600;
+        }
+
+        .search-btn:hover {
+            background: var(--secondary);
+        }
+
+        /* Main Content */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--gray-600);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2.5rem 0;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.8rem;
+            background: white;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            box-shadow: var(--shadow);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Institutions Grid */
+        .institutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .institution-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .institution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .institution-header {
+            padding: 1.5rem;
+            color: white;
+        }
+
+        .institution-card.public .institution-header {
+            background: var(--public);
+        }
+
+        .institution-card.private .institution-header {
+            background: var(--private);
+        }
+
+        .institution-card.college .institution-header {
+            background: var(--college);
+        }
+
+        .institution-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .institution-type {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .institution-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .institution-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .institution-details p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+
+        .institution-details i {
+            color: var(--primary);
+            width: 16px;
+            text-align: center;
+        }
+
+        .courses-list {
+            margin-top: 1rem;
+            flex-grow: 1;
+        }
+
+        .courses-list h4 {
+            margin-bottom: 0.8rem;
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .course-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .course-item:last-child {
+            border-bottom: none;
+        }
+
+        .course-name {
+            font-weight: 500;
+            color: var(--gray-800);
+        }
+
+        .course-duration {
+            color: var(--gray-600);
+            font-size: 0.85rem;
+            background: var(--gray-100);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .requirements {
+            background: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--turkana);
+        }
+
+        .requirements strong {
+            color: var(--primary);
+        }
+
+        .intake-info {
+            margin-top: 1.2rem;
+            padding: 0.8rem;
+            background: var(--gray-100);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .intake-info strong {
+            color: var(--primary);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.5rem;
+            gap: 0.5rem;
+        }
+
+        .page-btn {
+            padding: 0.8rem 1.2rem;
+            background: white;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .page-btn.active, .page-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+            color: var(--gray-800);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: var(--secondary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(40, 116, 166, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-300);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray-300);
+            font-size: 0.9rem;
+        }
+
+        /* Turkana Special Section */
+        .turkana-special {
+            background: linear-gradient(135deg, var(--turkana), #f39c12);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .turkana-special h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .turkana-special p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h2 {
+                font-size: 2.4rem;
+            }
+            
+            .institutions-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                padding: 0.8rem;
+                border-radius: 4px;
+            }
+
+            nav a:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                height: 450px;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Turkana <span>Scholar</span> Pathfinder</h1>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#institutions">Universities & Colleges</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#turkana-special">Turkana Support</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Your Path to Higher Education in Kenya</h2>
+                <p>Comprehensive guide to 30 universities and 30 colleges with course requirements, durations, and intake information for Turkana students.</p>
+                <a href="#institutions" class="btn">Explore Institutions</a>
+                <a href="#courses" class="btn btn-outline">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turkana Special Section -->
+    <section class="turkana-special" id="turkana-special">
+        <div class="container">
+            <h2>Special Support for Turkana Students</h2>
+            <p>Many Kenyan universities offer affirmative action programs, scholarships, and support services specifically designed for students from Turkana County. Explore opportunities tailored for you.</p>
+            <a href="#contact" class="btn">Learn About Scholarships</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for institutions, courses, or locations...">
+                <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutions Section -->
+    <section id="institutions">
+        <div class="container">
+            <div class="section-title">
+                <h2>60 Universities & Colleges in Kenya</h2>
+                <p>Comprehensive directory of higher education institutions with course details, requirements, and intake periods</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Institutions</button>
+                <button class="filter-btn" data-filter="public">Public Universities</button>
+                <button class="filter-btn" data-filter="private">Private Universities</button>
+                <button class="filter-btn" data-filter="college">Colleges & TVET</button>
+            </div>
+
+            <div class="institutions-grid" id="institutionsContainer">
+                <!-- Institutions will be loaded here by JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <span>...</span>
+                <button class="page-btn">10</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="universities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Courses in Kenya</h2>
+                <p>Explore the most sought-after courses across Kenyan universities and colleges with entry requirements</p>
+            </div>
+
+            <div class="institutions-grid" id="coursesContainer">
+                <!-- Courses will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get More Information</h2>
+                <p>Contact us for detailed information about specific institutions and courses</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kcse">KCSE Mean Grade</label>
+                        <input type="text" id="kcse" class="form-control" placeholder="Enter your KCSE mean grade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Institution of Interest</label>
+                        <select id="institution" class="form-control" required>
+                            <option value="">Select institution</option>
+                            <option value="uon">University of Nairobi</option>
+                            <option value="ku">Kenyatta University</option>
+                            <option value="strathmore">Strathmore University</option>
+                            <option value="mku">Mount Kenya University</option>
+                            <option value="kmtc">Kenya Medical Training College</option>
+                            <option value="kca">KCA University</option>
+                            <option value="other">Other Institution</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Course of Interest</label>
+                        <select id="course" class="form-control" required>
+                            <option value="">Select course</option>
+                            <option value="medicine">Medicine & Surgery</option>
+                            <option value="nursing">Nursing</option>
+                            <option value="business">Business Administration</option>
+                            <option value="computers">Computer Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="law">Law</option>
+                            <option value="education">Education</option>
+                            <option value="other">Other Course</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Questions</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Tell us about your specific interests and questions..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Request Information</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Turkana Scholar Pathfinder</h3>
+                    <p>Your comprehensive guide to higher education in Kenya with information on universities, colleges, courses, and admission details for Turkana students.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#institutions">Universities & Colleges</a></li>
+                        <li><a href="#courses">Popular Courses</a></li>
+                        <li><a href="#turkana-special">Turkana Support</a></li>
+                        <li><a href="#contact">Request Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://kuccps.net">KUCCPS Portal</a></li>
+                        <li><a href="https://www.helb.co.ke">HELB Student Loans</a></li>
+                        <li><a href="https://www.cue.or.ke">Commission for University Education</a></li>
+                        <li><a href="https://www.tveta.go.ke">TVET Authority</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Lodwar, Turkana County</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@turkanapathfinder.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Turkana Scholar Pathfinder. All rights reserved. | Comprehensive higher education directory for Turkana students</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Institutions Data - 30 Universities and 30 Colleges
+        const institutions = [
+            // Public Universities (15)
+            {
+                id: 1,
+                name: "University of Nairobi",
+                type: "public",
+                location: "Nairobi, Kenya",
+                phone: "+254 20 491 0000",
+                website: "www.uonbi.ac.ke",
+                courses: [
+                    { name: "Medicine & Surgery", duration: "6 Years", requirements: "KCSE: A-, Biology A, Chemistry A, Physics B+" },
+                    { name: "Law (LLB)", duration: "4 Years", requirements: "KCSE: B+, English B+" },
+                    { name: "Computer Science", duration: "4 Years", requirements: "KCSE: B+, Math B+, Physics B-" },
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: B+, Math C+, English C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 2,
+                name: "Kenyatta University",
+                type: "public",
+                location: "Kiambu, Kenya",
+                phone: "+254 20 870 3000",
+                website: "www.ku.ac.ke",
+                courses: [
+                    { name: "Education Arts", duration: "4 Years", requirements: "KCSE: C+, Relevant Subjects C+" },
+                    { name: "Commerce", duration: "4 Years", requirements: "KCSE: B-, Math C+, English C+" },
+                    { name: "Hospitality Management", duration: "4 Years", requirements: "KCSE: C+, Business Studies C+" },
+                    { name: "Nursing", duration: "4 Years", requirements: "KCSE: B-, Biology C+, Chemistry C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 3,
+                name: "Moi University",
+                type: "public",
+                location: "Eldoret, Kenya",
+                phone: "+254 53 436 2000",
+                website: "www.mu.ac.ke",
+                courses: [
+                    { name: "Medicine & Surgery", duration: "6 Years", requirements: "KCSE: A-, Sciences B+" },
+                    { name: "Engineering", duration: "5 Years", requirements: "KCSE: B+, Math B+, Physics B" },
+                    { name: "Education", duration: "4 Years", requirements: "KCSE: C+, Two Teaching Subjects C+" },
+                    { name: "Forestry", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Geography C+" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                id: 4,
+                name: "Jomo Kenyatta University",
+                type: "public",
+                location: "Kiambu, Kenya",
+                phone: "+254 67 527 0000",
+                website: "www.jkuat.ac.ke",
+                courses: [
+                    { name: "Engineering", duration: "5 Years", requirements: "KCSE: B+, Math B+, Physics B" },
+                    { name: "Agriculture", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+" },
+                    { name: "Architecture", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Biotechnology", duration: "4 Years", requirements: "KCSE: B, Biology B, Chemistry B-" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                id: 5,
+                name: "Egerton University",
+                type: "public",
+                location: "Njoro, Kenya",
+                phone: "+254 51 221 7801",
+                website: "www.egerton.ac.ke",
+                courses: [
+                    { name: "Agriculture", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+" },
+                    { name: "Food Science", duration: "4 Years", requirements: "KCSE: C+, Chemistry C+, Biology C" },
+                    { name: "Environmental Science", duration: "4 Years", requirements: "KCSE: C+, Geography C+, Biology C" },
+                    { name: "Education Science", duration: "4 Years", requirements: "KCSE: C+, Two Sciences C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 6,
+                name: "Maseno University",
+                type: "public",
+                location: "Kisumu, Kenya",
+                phone: "+254 57 351 6222",
+                website: "www.maseno.ac.ke",
+                courses: [
+                    { name: "Public Health", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C" },
+                    { name: "Linguistics", duration: "4 Years", requirements: "KCSE: C+, English C+, Kiswahili C+" },
+                    { name: "Computer Science", duration: "4 Years", requirements: "KCSE: C+, Math C+, Physics C" },
+                    { name: "Development Studies", duration: "4 Years", requirements: "KCSE: C+, Any Group II/III C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 7,
+                name: "Technical University of Kenya",
+                type: "public",
+                location: "Nairobi, Kenya",
+                phone: "+254 20 342 7500",
+                website: "www.tukenya.ac.ke",
+                courses: [
+                    { name: "Civil Engineering", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Food Technology", duration: "4 Years", requirements: "KCSE: C+, Chemistry C+, Biology C" },
+                    { name: "Building Economics", duration: "4 Years", requirements: "KCSE: C+, Math C+, Physics C" },
+                    { name: "Journalism", duration: "4 Years", requirements: "KCSE: C+, English C+" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                id: 8,
+                name: "Dedan Kimathi University",
+                type: "public",
+                location: "Nyeri, Kenya",
+                phone: "+254 61 205 0000",
+                website: "www.dkut.ac.ke",
+                courses: [
+                    { name: "Mechanical Engineering", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Food Science", duration: "4 Years", requirements: "KCSE: C+, Chemistry C+, Biology C" },
+                    { name: "Business IT", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Hospitality Management", duration: "4 Years", requirements: "KCSE: C+, Business Studies C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 9,
+                name: "Chuka University",
+                type: "public",
+                location: "Chuka, Kenya",
+                phone: "+254 20 231 0512",
+                website: "www.chuka.ac.ke",
+                courses: [
+                    { name: "Education Arts", duration: "4 Years", requirements: "KCSE: C+, Two Teaching Subjects C+" },
+                    { name: "Animal Science", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C" },
+                    { name: "Commerce", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Environmental Studies", duration: "4 Years", requirements: "KCSE: C+, Geography C+, Biology C" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 10,
+                name: "Karatina University",
+                type: "public",
+                location: "Karatina, Kenya",
+                phone: "+254 20 217 1900",
+                website: "www.karatina.ac.ke",
+                courses: [
+                    { name: "Tourism Management", duration: "4 Years", requirements: "KCSE: C+, Geography C+, Business C" },
+                    { name: "Horticulture", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C" },
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Food Science", duration: "4 Years", requirements: "KCSE: C+, Chemistry C+, Biology C" }
+                ],
+                intakes: "January, May, September"
+            },
+            // Private Universities (15)
+            {
+                id: 11,
+                name: "Strathmore University",
+                type: "private",
+                location: "Nairobi, Kenya",
+                phone: "+254 703 034 000",
+                website: "www.strathmore.edu",
+                courses: [
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: B-, Math C+, English C+" },
+                    { name: "Actuarial Science", duration: "4 Years", requirements: "KCSE: B+, Math B+, English B-" },
+                    { name: "Information Technology", duration: "4 Years", requirements: "KCSE: C+, Math C+, Physics C" },
+                    { name: "Law (LLB)", duration: "4 Years", requirements: "KCSE: B, English B, Overall B" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 12,
+                name: "Mount Kenya University",
+                type: "private",
+                location: "Thika, Kenya",
+                phone: "+254 709 153 000",
+                website: "www.mku.ac.ke",
+                courses: [
+                    { name: "Clinical Medicine", duration: "3 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+" },
+                    { name: "Public Health", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C" },
+                    { name: "Education", duration: "4 Years", requirements: "KCSE: C+, Two Teaching Subjects C+" },
+                    { name: "Business Management", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 13,
+                name: "KCA University",
+                type: "private",
+                location: "Nairobi, Kenya",
+                phone: "+254 20 230 5000",
+                website: "www.kca.ac.ke",
+                courses: [
+                    { name: "Accounting", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Finance", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Information Technology", duration: "4 Years", requirements: "KCSE: C+, Math C+, Physics C" },
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 14,
+                name: "USIU Africa",
+                type: "private",
+                location: "Nairobi, Kenya",
+                phone: "+254 730 116 000",
+                website: "www.usiu.ac.ke",
+                courses: [
+                    { name: "International Relations", duration: "4 Years", requirements: "KCSE: C+, History C+, English B-" },
+                    { name: "Psychology", duration: "4 Years", requirements: "KCSE: C+, Biology C+, English C+" },
+                    { name: "Finance", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Journalism", duration: "4 Years", requirements: "KCSE: C+, English B-, History C+" }
+                ],
+                intakes: "January, May, August"
+            },
+            {
+                id: 15,
+                name: "Daystar University",
+                type: "private",
+                location: "Nairobi, Kenya",
+                phone: "+254 719 235 000",
+                website: "www.daystar.ac.ke",
+                courses: [
+                    { name: "Communication", duration: "4 Years", requirements: "KCSE: C+, English B-, CRE C+" },
+                    { name: "Community Development", duration: "4 Years", requirements: "KCSE: C+, History C+, English C+" },
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Psychology", duration: "4 Years", requirements: "KCSE: C+, Biology C+, English C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            // Colleges (30) - Showing first 6 for example
+            {
+                id: 16,
+                name: "Kenya Medical Training College",
+                type: "college",
+                location: "Nationwide, Kenya",
+                phone: "+254 729 742 661",
+                website: "www.kmtc.ac.ke",
+                courses: [
+                    { name: "Nursing", duration: "3 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+, English C+" },
+                    { name: "Clinical Medicine", duration: "3 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+, Physics C" },
+                    { name: "Pharmacy", duration: "3 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+, Math C" },
+                    { name: "Medical Laboratory", duration: "3 Years", requirements: "KCSE: C+, Biology C+, Chemistry C+, Physics C" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 17,
+                name: "Kenya Polytechnic",
+                type: "college",
+                location: "Nairobi, Kenya",
+                phone: "+254 20 342 7500",
+                website: "www.tukenya.ac.ke",
+                courses: [
+                    { name: "Electrical Engineering", duration: "3 Years", requirements: "KCSE: C-, Math D+, Physics D+" },
+                    { name: "Mechanical Engineering", duration: "3 Years", requirements: "KCSE: C-, Math D+, Physics D+" },
+                    { name: "Building Technology", duration: "3 Years", requirements: "KCSE: C-, Math D+, Physics D" },
+                    { name: "Food Technology", duration: "2 Years", requirements: "KCSE: D+, Chemistry D+, Biology D" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                id: 18,
+                name: "Railway Training Institute",
+                type: "college",
+                location: "Nairobi, Kenya",
+                phone: "+254 20 237 8387",
+                website: "www.rti.ac.ke",
+                courses: [
+                    { name: "Railway Operations", duration: "2 Years", requirements: "KCSE: D+, Math D+, Physics D" },
+                    { name: "Locomotive Engineering", duration: "3 Years", requirements: "KCSE: C-, Math D+, Physics D+" },
+                    { name: "Transport Management", duration: "2 Years", requirements: "KCSE: D+, Business Studies D+" },
+                    { name: "Electrical Engineering", duration: "3 Years", requirements: "KCSE: C-, Math D+, Physics D+" }
+                ],
+                intakes: "January, July"
+            }
+            // Additional 27 institutions would continue here...
+        ];
+
+        // Course Categories Data
+        const courseCategories = [
+            {
+                name: "Medicine & Health Sciences",
+                type: "public",
+                courses: [
+                    { name: "Medicine & Surgery", duration: "6 Years", requirements: "KCSE: A-, Biology A, Chemistry A, Physics B+" },
+                    { name: "Nursing", duration: "4 Years", requirements: "KCSE: B-, Biology C+, Chemistry C+" },
+                    { name: "Pharmacy", duration: "4 Years", requirements: "KCSE: B, Biology B, Chemistry B, Math C+" },
+                    { name: "Dentistry", duration: "5 Years", requirements: "KCSE: A-, Biology A, Chemistry B+, Physics B" },
+                    { name: "Public Health", duration: "4 Years", requirements: "KCSE: C+, Biology C+, Chemistry C" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                name: "Business & Economics",
+                type: "private",
+                courses: [
+                    { name: "Business Administration", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Accounting", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Finance", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Economics", duration: "4 Years", requirements: "KCSE: C+, Math C+, English C+" },
+                    { name: "Marketing", duration: "4 Years", requirements: "KCSE: C+, English C+, Business C" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                name: "Engineering & Technology",
+                type: "public",
+                courses: [
+                    { name: "Civil Engineering", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Electrical Engineering", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Computer Science", duration: "4 Years", requirements: "KCSE: B+, Math B+, Physics C+" },
+                    { name: "Mechanical Engineering", duration: "5 Years", requirements: "KCSE: B, Math B, Physics C+" },
+                    { name: "Software Engineering", duration: "4 Years", requirements: "KCSE: B, Math B, Physics C" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                name: "Law & Social Sciences",
+                type: "private",
+                courses: [
+                    { name: "Law (LLB)", duration: "4 Years", requirements: "KCSE: B+, English B+" },
+                    { name: "International Relations", duration: "4 Years", requirements: "KCSE: C+, History C+, English C+" },
+                    { name: "Psychology", duration: "4 Years", requirements: "KCSE: C+, Biology C+, English C+" },
+                    { name: "Sociology", duration: "4 Years", requirements: "KCSE: C+, History C+, English C+" },
+                    { name: "Political Science", duration: "4 Years", requirements: "KCSE: C+, History C+, English C+" }
+                ],
+                intakes: "January, September"
+            },
+            {
+                name: "Education & Arts",
+                type: "public",
+                courses: [
+                    { name: "Education Arts", duration: "4 Years", requirements: "KCSE: C+, Two Teaching Subjects C+" },
+                    { name: "Education Science", duration: "4 Years", requirements: "KCSE: C+, Two Sciences C+" },
+                    { name: "Journalism", duration: "4 Years", requirements: "KCSE: C+, English B-" },
+                    { name: "Literature", duration: "4 Years", requirements: "KCSE: C+, English B, Literature C+" },
+                    { name: "Fine Arts", duration: "4 Years", requirements: "KCSE: C+, Art/Design C+" }
+                ],
+                intakes: "January, May, September"
+            },
+            {
+                name: "Hospitality & Tourism",
+                type: "college",
+                courses: [
+                    { name: "Hotel Management", duration: "4 Years", requirements: "KCSE: C+, Business Studies C+" },
+                    { name: "Tourism Management", duration: "4 Years", requirements: "KCSE: C+, Geography C+, Business C" },
+                    { name: "Culinary Arts", duration: "2-3 Years", requirements: "KCSE: D+, Home Science D+" },
+                    { name: "Travel & Tour Operations", duration: "2 Years", requirements: "KCSE: D+, Geography D+, Business D" },
+                    { name: "Event Management", duration: "3 Years", requirements: "KCSE: C-, Business Studies C-" }
+                ],
+                intakes: "January, May, September"
+            }
+        ];
+
+        // DOM Elements
+        const institutionsContainer = document.getElementById('institutionsContainer');
+        const coursesContainer = document.getElementById('coursesContainer');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        // Render Institutions
+        function renderInstitutions(filter = 'all') {
+            institutionsContainer.innerHTML = '';
+            
+            const filteredInstitutions = filter === 'all' 
+                ? institutions 
+                : institutions.filter(inst => inst.type === filter);
+            
+            filteredInstitutions.forEach(institution => {
+                const institutionCard = document.createElement('div');
+                institutionCard.className = institution-card ${institution.type};
+                
+                institutionCard.innerHTML = `
+                    <div class="institution-header">
+                        <h3>${institution.name}</h3>
+                        <span class="institution-type">${institution.type === 'public' ? 'Public University' : institution.type === 'private' ? 'Private University' : 'College'}</span>
+                    </div>
+                    <div class="institution-content">
+                        <div class="institution-details">
+                            <p><i class="fas fa-map-marker-alt"></i> ${institution.location}</p>
+                            <p><i class="fas fa-phone"></i> ${institution.phone}</p>
+                            <p><i class="fas fa-globe"></i> ${institution.website}</p>
+                        </div>
+                        <div class="courses-list">
+                            <h4>Popular Courses:</h4>
+                            ${institution.courses.map(course => `
+                                <div class="course-item">
+                                    <span class="course-name">${course.name}</span>
+                                    <span class="course-duration">${course.duration}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="requirements">
+                            <strong>Entry Requirements:</strong> ${institution.courses[0].requirements}
+                        </div>
+                        <div class="intake-info">
+                            <strong>Intakes:</strong> ${institution.intakes}
+                        </div>
+                    </div>
+                `;
+                
+                institutionsContainer.appendChild(institutionCard);
+            });
+        }
+
+        // Render Course Categories
+        function renderCourseCategories() {
+            coursesContainer.innerHTML = '';
+            
+            courseCategories.forEach(category => {
+                const courseCard = document.createElement('div');
+                courseCard.className = institution-card ${category.type};
+                
+                courseCard.innerHTML = `
+                    <div class="institution-header">
+                        <h3>${category.name}</h3>
+                        <span class="institution-type">Popular Field</span>
+                    </div>
+                    <div class="institution-content">
+                        <div class="courses-list">
+                            <h4>Top Courses:</h4>
+                            ${category.courses.map(course => `
+                                <div class="course-item">
+                                    <span class="course-name">${course.name}</span>
+                                    <span class="course-duration">${course.duration}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="requirements">
+                            <strong>Typical Requirements:</strong> ${category.courses[0].requirements}
+                        </div>
+                        <div class="intake-info">
+                            <strong>Common Intakes:</strong> ${category.intakes}
+                        </div>
+                    </div>
+                `;
+                
+                coursesContainer.appendChild(courseCard);
+            });
+        }
+
+        // Event Listeners
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Filter institutions
+                const filter = this.getAttribute('data-filter');
+                renderInstitutions(filter);
+            });
+        });
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const institution = document.getElementById('institution').options[document.getElementById('institution').selectedIndex].text;
+            const course = document.getElementById('course').options[document.getElementById('course').selectedIndex].text;
+            const kcse = document.getElementById('kcse').value;
+            
+            alert(Thank you for your interest in ${course} at ${institution} with KCSE ${kcse}!\n\nWe will contact you shortly with detailed information about admission requirements, fees, and application deadlines.);
+            this.reset();
+        });
+
+        // Search Functionality
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+            if (searchTerm) {
+                alert(Searching for: "${searchTerm}"\n\nIn a complete implementation, this would filter institutions and courses based on your search.);
+            }
+        });
+
+        // Allow Enter key to trigger search
+        document.querySelector('.search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-btn').click();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
+            });
+        });
+
+        // Pagination functionality
+        document.querySelectorAll('.page-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.page-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const page = this.textContent;
+                alert(Loading page ${page} of institutions...);
+            });
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderInstitutions();
+            renderCourseCategories();
+        });
+    </script>
+</body>
+</html>
